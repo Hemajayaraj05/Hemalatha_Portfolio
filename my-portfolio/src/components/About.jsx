@@ -34,7 +34,7 @@ export default function About() {
           <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-purple-300 h-10">
             <Typewriter
               words={["Full Stack Developer"]}
-              loop={1}
+              loop={4}
               cursor
               cursorStyle="|"
               typeSpeed={80}

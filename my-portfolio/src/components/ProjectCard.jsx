@@ -29,29 +29,53 @@ export default function ProjectCard({ project, direction = "left" }) {
 
   return (
     <div
-      className={`bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden 
-                  transition-transform duration-700 ease-out 
-                  ${visible ? "translate-x-0 translate-y-0 opacity-100" : `${fromClass} opacity-0`}
-                  hover:scale-105 hover:shadow-2xl`}
+      className={`bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden
+      transition-all duration-700 ease-out
+      ${
+        visible
+          ? "translate-x-0 translate-y-0 opacity-100"
+          : `${fromClass} opacity-0`
+      }
+      hover:scale-105 hover:shadow-2xl`}
     >
-      {/* Image Section */}
+      {/* Image */}
       <div className="relative w-full aspect-video overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
         />
       </div>
 
-      {/* Content Section */}
+      {/* Content */}
       <div className="p-5 flex flex-col gap-2">
-        <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-        <p className="text-gray-300 text-sm">{project.description}</p>
+        <h3 className="text-xl font-semibold text-white">
+          {project.title}
+        </h3>
+
+        <p className="text-gray-300 text-sm">
+          {project.description}
+        </p>
+
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mt-2">
+          {project.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="px-3 py-1 text-xs rounded-full
+              bg-purple-500/20 text-purple-300
+              border border-purple-500/30"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
         <a
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 inline-block text-purple-400 hover:text-purple-600 font-medium underline"
+          className="mt-3 inline-block text-purple-400 hover:text-purple-600 font-medium underline"
         >
           View on GitHub
         </a>
