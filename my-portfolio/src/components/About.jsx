@@ -8,7 +8,7 @@ export default function About() {
 
       {/* Quote at the top */}
       <h2 className="text-center text-xl md:text-xl  text-purple-300 mb-12">
-        Innovating through logic, designing through passion ❤️
+        INNOVATING THROUGH LOGIC, DESIGNING THROUGH PASSION ❤️
       </h2>
 
       <div className="max-w-7xl w-full grid md:grid-cols-2 gap-16 items-center">
@@ -34,7 +34,7 @@ export default function About() {
           <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-purple-300 h-10">
             <Typewriter
               words={["Full Stack Developer"]}
-              loop={4}
+              loop={1}
               cursor
               cursorStyle="|"
               typeSpeed={80}
