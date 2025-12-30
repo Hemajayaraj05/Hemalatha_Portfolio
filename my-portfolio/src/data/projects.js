@@ -1,4 +1,4 @@
-import image from "../images/arch.png"; import home from "../images/home.png"; import port from "../images/port.png"; import habit from "../images/habit.png"; import alum from "../images/alum.png"; import rest from "../images/image.png";
+import image from "../images/arch.png"; import home from "../images/home.png"; import port from "../images/sih.png"; import habit from "../images/habit.png"; import alum from "../images/alum.png"; import rest from "../images/rest.png";
 
 
 export const projectsData = [
@@ -20,11 +20,11 @@ export const projectsData = [
     tags: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
-    title: "Portfolio",
+    title: "Assured Contract farming System",
     description:
-      "A personal portfolio website designed to highlight projects, technical skills, and achievements with interactive sections and smooth UI animations.",
+     "Developed the frontend for a secure contract platform connecting farmers with buyers, ensuring guaranteed produce and transparent agreements.",
     image: port,
-    github: "https://github.com/Hemajayaraj05/Hemalatha_Portfolio",
+    github: "https://github.com/Hemajayaraj05/SIH_Project",
     tags: ["React", "Tailwind CSS", "Animations"],
   },
   {

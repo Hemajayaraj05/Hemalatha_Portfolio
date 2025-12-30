@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import profile from "../images/hema.jpg";
-import resume from "../images/HEMALATHA_J.pdf";
+import resume from "../images/Hema_Resume.pdf";
 
 export default function About() {
   return (
